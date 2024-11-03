@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    overflow: hidden;
+    user-select: none;
+}
+
+body {
+    height: 100vh;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(128, 128, 128);
+}
+
+.container {
+    min-width: 300px;
+    background-color: #970480;
+    height: 60%;
+    width: 60vw;
+}
+
+.picker {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    height: 60%;
+    background-color: rgb(128, 128, 128);
+    /* transition: all 1s ease-in-out 1s; */
+}
+
+.picker input {
+    border-radius: 10px;
+}
+
+.red {
+    accent-color: red;
+}
+
+.blue {
+    accent-color: blue;
+}
+
+.green {
+    accent-color: green;
+}
+
+/* ::-webkit-slider-runnable-track {
+    background-color: rgba(219, 186, 19, 0.63);
+} */
+
+.btns {
+    height: 40%;
+    background: rgb(128, 128, 128);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btns input {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.5);
+    color: #000;
+    text-align: center;
+    font-weight: 900;
+}
+
+@media screen and (max-width:600px) {
+    .btns {
+        flex-direction: column;
+    }
+
+    .btns input {
+        width: 50%;
+    }
+}
